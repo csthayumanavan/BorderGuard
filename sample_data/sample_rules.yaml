@@ -1,0 +1,30 @@
+country_rules:
+  india:
+    allowed_storage: ["india"]
+    allowed_processors: ["local_bank_processor", "local_cloud_vendor"]
+    allowed_destinations: ["india"]
+    encrypt_required: true
+    third_party_processing_allowed: false
+
+  global:
+    allowed_storage: ["india", "usa", "singapore", "uae"]
+    allowed_processors: ["local_bank_processor", "local_cloud_vendor", "approved_global_processor"]
+    allowed_destinations: ["india", "usa", "singapore", "uae"]
+    encrypt_required: true
+    third_party_processing_allowed: true
+
+restricted_data_types:
+  payment_data:
+    region_restriction: "india"
+    require_encryption: true
+  personal_data:
+    region_restriction: "india"
+    require_encryption: true
+  health_data:
+    region_restriction: "india"
+    require_encryption: true
+
+blocked_regions:
+  - "china"
+  - "russia"
+  - "iran"

@@ -1,0 +1,35 @@
+{
+  "source": "india",
+  "destination": "usa",
+  "data_type": "payment_data",
+  "processor": "unapproved_vendor",
+  "encrypted": false
+}
+{
+  "source": "india",
+  "destination": "india",
+  "data_type": "personal_data",
+  "processor": "local_bank_processor",
+  "encrypted": true
+}
+{
+  "source": "india",
+  "destination": "uae",
+  "data_type": "health_data",
+  "processor": "approved_global_processor",
+  "encrypted": true
+}
+{
+  "source": "india",
+  "destination": "china",
+  "data_type": "payment_data",
+  "processor": "unapproved_vendor",
+  "encrypted": false
+}
+{
+  "source": "india",
+  "destination": "singapore",
+  "data_type": "personal_data",
+  "processor": "local_cloud_vendor",
+  "encrypted": true
+}
